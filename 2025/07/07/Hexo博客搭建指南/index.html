@@ -20,30 +20,38 @@
     var CONFIG = {"hostname":"example.com","root":"/","scheme":"Mist","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="something true, something wrong">
-<meta property="og:type" content="website">
-<meta property="og:title" content="propersimon">
-<meta property="og:url" content="http://example.com/index.html">
+  <meta name="description" content="Hexo博客搭建指南Hexo是一个快速、简洁且高效的博客框架。有Node.js 所带来的超快生成速度。 上百个页面在几秒内完成渲染。Hexo 支持 GitHub Flavored Markdown 的所有功能，甚至可以整合 Octopress 的大多数插件。只需一条指令即可部署到 GitHub Pages, Heroku 或其他平台。并且其强大的 API 带来无限的可能。 支持数种模板引擎（EJS">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexo博客搭建指南">
+<meta property="og:url" content="http://example.com/2025/07/07/Hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%8C%87%E5%8D%97/index.html">
 <meta property="og:site_name" content="propersimon">
-<meta property="og:description" content="something true, something wrong">
+<meta property="og:description" content="Hexo博客搭建指南Hexo是一个快速、简洁且高效的博客框架。有Node.js 所带来的超快生成速度。 上百个页面在几秒内完成渲染。Hexo 支持 GitHub Flavored Markdown 的所有功能，甚至可以整合 Octopress 的大多数插件。只需一条指令即可部署到 GitHub Pages, Heroku 或其他平台。并且其强大的 API 带来无限的可能。 支持数种模板引擎（EJS">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://raw.githubusercontent.com/zzx-doc/markdown_picture_bed/master/nodeInstallStep1.jpg?token=AQ5YX4WE4LWTOM73CAGSVMTINNSQG">
+<meta property="og:image" content="https://raw.githubusercontent.com/zzx-doc/markdown_picture_bed/master/nodeInstallStep2.jpg?token=AQ5YX4R3SRIODXFWCWKV3BDINNTAE">
+<meta property="og:image" content="https://raw.githubusercontent.com/zzx-doc/markdown_picture_bed/master/gitPage.jpg?token=AQ5YX4VOFEFF54AXLGVBICLINN5F2">
+<meta property="og:image" content="https://raw.githubusercontent.com/zzx-doc/markdown_picture_bed/master/hexoHelloWorld.jpg?token=AQ5YX4WFDSHVZIUORLVYUTLINNXOW">
+<meta property="article:published_time" content="2025-07-07T07:06:35.000Z">
+<meta property="article:modified_time" content="2025-07-08T02:03:31.924Z">
 <meta property="article:author" content="propersilmon">
+<meta property="article:tag" content="Hexo">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/zzx-doc/markdown_picture_bed/master/nodeInstallStep1.jpg?token=AQ5YX4WE4LWTOM73CAGSVMTINNSQG">
 
-<link rel="canonical" href="http://example.com/">
+<link rel="canonical" href="http://example.com/2025/07/07/Hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%8C%87%E5%8D%97/">
 
 
 <script id="page-configurations">
   // https://hexo.io/docs/variables.html
   CONFIG.page = {
     sidebar: "",
-    isHome : true,
-    isPost : false,
+    isHome : false,
+    isPost : true,
     lang   : 'en'
   };
 </script>
 
-  <title>propersimon</title>
+  <title>Hexo博客搭建指南 | propersimon</title>
   
 
 
@@ -74,119 +82,7 @@
   </style>
 </noscript>
 
-<style>mjx-container[jax="SVG"] {
-  direction: ltr;
-}
-
-mjx-container[jax="SVG"] > svg {
-  overflow: visible;
-}
-
-mjx-container[jax="SVG"][display="true"] {
-  display: block;
-  text-align: center;
-  margin: 1em 0;
-}
-
-mjx-container[jax="SVG"][justify="left"] {
-  text-align: left;
-}
-
-mjx-container[jax="SVG"][justify="right"] {
-  text-align: right;
-}
-
-g[data-mml-node="merror"] > g {
-  fill: red;
-  stroke: red;
-}
-
-g[data-mml-node="merror"] > rect[data-background] {
-  fill: yellow;
-  stroke: none;
-}
-
-g[data-mml-node="mtable"] > line[data-line] {
-  stroke-width: 70px;
-  fill: none;
-}
-
-g[data-mml-node="mtable"] > rect[data-frame] {
-  stroke-width: 70px;
-  fill: none;
-}
-
-g[data-mml-node="mtable"] > .mjx-dashed {
-  stroke-dasharray: 140;
-}
-
-g[data-mml-node="mtable"] > .mjx-dotted {
-  stroke-linecap: round;
-  stroke-dasharray: 0,140;
-}
-
-g[data-mml-node="mtable"] > svg {
-  overflow: visible;
-}
-
-[jax="SVG"] mjx-tool {
-  display: inline-block;
-  position: relative;
-  width: 0;
-  height: 0;
-}
-
-[jax="SVG"] mjx-tool > mjx-tip {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-mjx-tool > mjx-tip {
-  display: inline-block;
-  padding: .2em;
-  border: 1px solid #888;
-  font-size: 70%;
-  background-color: #F8F8F8;
-  color: black;
-  box-shadow: 2px 2px 5px #AAAAAA;
-}
-
-g[data-mml-node="maction"][data-toggle] {
-  cursor: pointer;
-}
-
-mjx-status {
-  display: block;
-  position: fixed;
-  left: 1em;
-  bottom: 1em;
-  min-width: 25%;
-  padding: .2em .4em;
-  border: 1px solid #888;
-  font-size: 90%;
-  background-color: #F8F8F8;
-  color: black;
-}
-
-foreignObject[data-mjx-xml] {
-  font-family: initial;
-  line-height: normal;
-  overflow: visible;
-}
-
-.MathJax path {
-  stroke-width: 3;
-}
-
-mjx-container[display="true"] {
-  overflow: auto hidden;
-}
-
-mjx-container[display="true"] + br {
-  display: none;
-}
-</style></head>
+</head>
 
 <body itemscope itemtype="http://schema.org/WebPage">
   <div class="container use-motion">
@@ -269,9 +165,10 @@ mjx-container[display="true"] + br {
         <div class="content-wrap">
           
 
-          <div class="content index posts-expand">
+          <div class="content post posts-expand">
             
-      
+
+    
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
@@ -287,10 +184,9 @@ mjx-container[display="true"] + br {
       <meta itemprop="name" content="propersimon">
     </span>
       <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2025/07/07/Hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%8C%87%E5%8D%97/" class="post-title-link" itemprop="url">Hexo博客搭建指南</a>
-        </h2>
+        <h1 class="post-title" itemprop="name headline">
+          Hexo博客搭建指南
+        </h1>
 
         <div class="post-meta">
             <span class="post-meta-item">
@@ -318,7 +214,14 @@ mjx-container[display="true"] + br {
                 </span>
             </span>
 
-          <br>
+          
+            <span class="post-meta-item" title="Views" id="busuanzi_container_page_pv" style="display: none;">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">Views: </span>
+              <span id="busuanzi_value_page_pv"></span>
+            </span><br>
             <span class="post-meta-item" title="Symbols count in article">
               <span class="post-meta-item-icon">
                 <i class="far fa-file-word"></i>
@@ -343,7 +246,7 @@ mjx-container[display="true"] + br {
     <div class="post-body" itemprop="articleBody">
 
       
-          <h1 id="Hexo博客搭建指南"><a href="#Hexo博客搭建指南" class="headerlink" title="Hexo博客搭建指南"></a>Hexo博客搭建指南</h1><p><code>Hexo</code>是一个快速、简洁且高效的博客框架。有Node.js 所带来的超快生成速度。 上百个页面在几秒内完成渲染。Hexo 支持 GitHub Flavored Markdown 的所有功能，甚至可以整合 Octopress 的大多数插件。只需一条指令即可部署到 GitHub Pages, Heroku 或其他平台。并且其强大的 API 带来无限的可能。 支持数种模板引擎（EJS，Pug，Nunjucks等）。 可以与现有的NPM包 (Babel, PostCSS, Less&#x2F;Sass 等) 轻松地集成。</p>
+        <h1 id="Hexo博客搭建指南"><a href="#Hexo博客搭建指南" class="headerlink" title="Hexo博客搭建指南"></a>Hexo博客搭建指南</h1><p><code>Hexo</code>是一个快速、简洁且高效的博客框架。有Node.js 所带来的超快生成速度。 上百个页面在几秒内完成渲染。Hexo 支持 GitHub Flavored Markdown 的所有功能，甚至可以整合 Octopress 的大多数插件。只需一条指令即可部署到 GitHub Pages, Heroku 或其他平台。并且其强大的 API 带来无限的可能。 支持数种模板引擎（EJS，Pug，Nunjucks等）。 可以与现有的NPM包 (Babel, PostCSS, Less&#x2F;Sass 等) 轻松地集成。</p>
 <h2 id="本地部署"><a href="#本地部署" class="headerlink" title="本地部署"></a>本地部署</h2><h3 id="安装Node-js"><a href="#安装Node-js" class="headerlink" title="安装Node.js"></a>安装<code>Node.js</code></h3><h4 id="winget安装Node-js"><a href="#winget安装Node-js" class="headerlink" title="winget安装Node.js"></a><code>winget</code>安装<code>Node.js</code></h4><p><code>Hexo</code>部署需要<code>Node.js</code>，如果为安装<code>Node.js</code>，请先安装：</p>
 <p>通过<code>winget</code>安装<code>Node.js</code>，使用<code>win+x</code>快捷键打开菜单栏选择<code>Windows Power Shell(管理员)</code>，在打开的窗口中输入如下命令查询<code>winget</code>版本号信息：</p>
 <figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">winget <span class="literal">--version</span></span><br></pre></td></tr></table></figure>
@@ -451,107 +354,33 @@ mjx-container[display="true"] + br {
 <p>上面的<code>background-image</code>设置的路径可以是包括网络链接在内的任意路径，文件路径寻址是相对于<code>themes/next/source/</code>目录的。上述的背景图片就放在<code>themes/next/source/images/bg.jpg</code>路径下。</p>
 <p>对于上述配置，如果你对css熟悉的话，可以使用任何你知道的css样式设置。</p>
 
-      
     </div>
 
     
     
     
+
       <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
+          <div class="post-tags">
+              <a href="/tags/Hexo/" rel="tag"># Hexo</a>
+          </div>
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2025/07/07/hello-world/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/uploads/avatar.jpg">
-      <meta itemprop="name" content="propersilmon">
-      <meta itemprop="description" content="something true, something wrong">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="propersimon">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2025/07/07/hello-world/" class="post-title-link" itemprop="url">Hello World</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2025-07-07 05:38:57" itemprop="dateCreated datePublished" datetime="2025-07-07T05:38:57+08:00">2025-07-07</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2025-07-08 04:33:27" itemprop="dateModified" datetime="2025-07-08T04:33:27+08:00">2025-07-08</time>
-              </span>
-
-          <br>
-            <span class="post-meta-item" title="Symbols count in article">
-              <span class="post-meta-item-icon">
-                <i class="far fa-file-word"></i>
-              </span>
-                <span class="post-meta-item-text">Symbols count in article: </span>
-              <span>117</span>
-            </span>
-            <span class="post-meta-item" title="Reading time">
-              <span class="post-meta-item-icon">
-                <i class="far fa-clock"></i>
-              </span>
-                <span class="post-meta-item-text">Reading time &asymp;</span>
-              <span>1 mins.</span>
-            </span>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2025/07/07/hello-world/#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
         
-      
-    </div>
 
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2025/07/07/hello-world/" rel="prev" title="Hello World">
+      <i class="fa fa-chevron-left"></i> Hello World
+    </a></div>
+      <div class="post-nav-item"></div>
+    </div>
       </footer>
+    
   </article>
   
   
-  
-
-
   
 
 
@@ -604,6 +433,7 @@ mjx-container[display="true"] + br {
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%8C%87%E5%8D%97"><span class="nav-number">1.</span> <span class="nav-text">Hexo博客搭建指南</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%9C%AC%E5%9C%B0%E9%83%A8%E7%BD%B2"><span class="nav-number">1.1.</span> <span class="nav-text">本地部署</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AE%89%E8%A3%85Node-js"><span class="nav-number">1.1.1.</span> <span class="nav-text">安装Node.js</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#winget%E5%AE%89%E8%A3%85Node-js"><span class="nav-number">1.1.1.1.</span> <span class="nav-text">winget安装Node.js</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%BD%91%E9%A1%B5%E5%AE%89%E8%A3%85Node-js"><span class="nav-number">1.1.1.2.</span> <span class="nav-text">网页安装Node.js</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AE%89%E8%A3%85Git"><span class="nav-number">1.1.2.</span> <span class="nav-text">安装Git</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AE%89%E8%A3%85Hexo"><span class="nav-number">1.1.3.</span> <span class="nav-text">安装Hexo</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%88%9D%E5%A7%8B%E5%8C%96%E5%8D%9A%E5%AE%A2%E9%A1%B9%E7%9B%AE"><span class="nav-number">1.2.</span> <span class="nav-text">初始化博客项目</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8D%9A%E5%AE%A2%E5%88%9B%E5%BB%BA%E4%B8%8E%E5%8F%91%E5%B8%83"><span class="nav-number">1.3.</span> <span class="nav-text">博客创建与发布</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%80%9A%E8%BF%87Hexo-cli%E7%94%9F%E6%88%90%E6%96%B0%E9%A1%B5%E9%9D%A2"><span class="nav-number">1.3.1.</span> <span class="nav-text">通过Hexo-cli生成新页面</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%BF%81%E7%A7%BB%E5%B7%B2%E6%9C%89%E7%9A%84markdown%E6%96%87%E6%A1%A3%E5%88%B0hexo%E4%B8%AD"><span class="nav-number">1.3.2.</span> <span class="nav-text">迁移已有的markdown文档到hexo中</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8D%9A%E5%AE%A2%E7%BE%8E%E5%8C%96"><span class="nav-number">1.4.</span> <span class="nav-text">博客美化</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%9B%B4%E6%8D%A2%E4%B8%BB%E9%A2%98"><span class="nav-number">1.4.1.</span> <span class="nav-text">更换主题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE"><span class="nav-number">1.4.2.</span> <span class="nav-text">主题配置</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%9B%B4%E6%8D%A2%E8%83%8C%E6%99%AF%E5%9B%BE%E7%89%87"><span class="nav-number">1.4.2.1.</span> <span class="nav-text">更换背景图片</span></a></li></ol></li></ol></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
