@@ -496,7 +496,7 @@ mjx-container[display="true"] + br {
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2025-07-10 16:51:22" itemprop="dateModified" datetime="2025-07-10T16:51:22+08:00">2025-07-10</time>
+                <time title="Modified: 2025-07-11 10:27:41" itemprop="dateModified" datetime="2025-07-11T10:27:41+08:00">2025-07-11</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -514,7 +514,7 @@ mjx-container[display="true"] + br {
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">Symbols count in article: </span>
-              <span>319</span>
+              <span>363</span>
             </span>
             <span class="post-meta-item" title="Reading time">
               <span class="post-meta-item-icon">
@@ -533,76 +533,15 @@ mjx-container[display="true"] + br {
     <div class="post-body" itemprop="articleBody">
 
       
-          <h1 id="安装Nginx"><a href="#安装Nginx" class="headerlink" title="安装Nginx"></a>安装Nginx</h1><p>下面以<code>debian/ubuntu</code>系统为例演示<code>nginx</code>的安装。</p>
-<p>Ubuntu 通常提供：</p>
-<table>
-<thead>
-<tr>
-<th>包名</th>
-<th>说明</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><code>nginx-core</code></td>
-<td>只含基础功能</td>
-</tr>
-<tr>
-<td><code>nginx-full</code></td>
-<td>含大量模块</td>
-</tr>
-<tr>
-<td><code>nginx-extras</code></td>
-<td>含 3rd-party 模块，如 <code>headers-more</code>、<code>echo</code></td>
-</tr>
-</tbody></table>
-<p>而 Nginx 官方仓库安装的 <code>nginx</code>，更接近官方源代码构建，不含 Ubuntu 添加的额外模块。</p>
-<p>👉 <strong>如果你依赖某些 Ubuntu 专有构建模块（如 lua、echo、headers-more）</strong>，可能需要：</p>
-<ul>
-<li>自行编译</li>
-<li>或使用第三方（如 <a target="_blank" rel="noopener" href="https://openresty.org/">OpenResty</a>）</li>
-</ul>
-<p>为了获取最新的版本特性，下面使用<code>nginx</code>官方的APT源来安装最新版本的<code>nginx</code>。</p>
-<p>1️⃣<strong>安装依赖工具（用于添加仓库）</strong></p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt install curl gnupg2 ca-certificates lsb-release -y</span><br></pre></td></tr></table></figure>
-
-<p>2️⃣ <strong>添加 Nginx 官方签名密钥</strong></p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">curl https://nginx.org/keys/nginx_signing.key | gpg --dearmor | <span class="built_in">sudo</span> <span class="built_in">tee</span> /etc/apt/trusted.gpg.d/nginx.gpg &gt;/dev/null</span><br></pre></td></tr></table></figure>
-
-<p>3️⃣<strong>添加官方 Nginx APT源</strong> </p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">echo</span> <span class="string">&quot;deb [arch=amd64 signed-by=/etc/apt/trusted.gpg.d/nginx.gpg] http://nginx.org/packages/ubuntu <span class="subst">$(lsb_release -cs)</span> nginx&quot;</span> | <span class="built_in">sudo</span> <span class="built_in">tee</span> /etc/apt/sources.list.d/nginx.list</span><br></pre></td></tr></table></figure>
-
-<p>4️⃣ <strong>更新索引并安装最新版 Nginx</strong></p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">sudo</span> apt update</span><br><span class="line"><span class="built_in">sudo</span> apt install nginx -y</span><br></pre></td></tr></table></figure>
-
-<p><strong>验证安装版本</strong></p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nginx -v</span><br></pre></td></tr></table></figure>
-
-<p>输出类似：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nginx version: nginx/1.26.1</span><br></pre></td></tr></table></figure>
-
-<h1 id="配置Nginx"><a href="#配置Nginx" class="headerlink" title="配置Nginx"></a>配置Nginx</h1><p><strong>配置文件路径</strong></p>
-<p>使用官方源安装的 Nginx：</p>
-<table>
-<thead>
-<tr>
-<th>配置项</th>
-<th>路径</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>主配置文件</td>
-<td><code>/etc/nginx/nginx.conf</code></td>
-</tr>
-<tr>
-<td>默认网站根目录</td>
-<td><code>/usr/share/nginx/html</code></td>
-</tr>
-<tr>
-<td>systemd 启动服务</td>
-<td><code>sudo systemctl restart nginx</code></td>
-</tr>
-</tbody></table>
-
+          <p>Nginx（发音为“Engine-X”）是一个<strong>高性能、轻量级的 Web 服务器和反向代理服务器</strong>，也常被用于负载均衡、HTTP 缓存等场景。</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2025/07/07/nginx%E6%A6%82%E8%A7%88%E6%8C%87%E5%8D%97/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
