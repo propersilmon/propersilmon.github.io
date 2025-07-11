@@ -20,19 +20,19 @@
     var CONFIG = {"hostname":"example.com","root":"/","scheme":"Mist","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="Bitwarden 是一个开源的密码管理器，用于安全地生成、存储和自动填写密码。它可以帮助用户管理各种网站和应用的登录信息、信用卡资料、身份证明文件等敏感数据。通过该软件可以帮助你记录登录信息，以及生成安全的密码。 Bitwarden 支持的平台 浏览器扩展：Chrome、Firefox、Edge、Safari、Brave 等 桌面应用：Windows、macOS、Linux 移动端：iOS、An">
+  <meta name="description" content="Bitwarden 是一个开源的密码管理器，用于安全地生成、存储和自动填写密码。它可以帮助用户管理各种网站和应用的登录信息、信用卡资料、身份证明文件等敏感数据。通过该软件可以帮助你记录登录信息，以及生成安全的密码。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="bitwarden部署教程">
 <meta property="og:url" content="http://example.com/2024/08/07/Bitwarden%E9%83%A8%E7%BD%B2%E6%8C%87%E5%8D%97/index.html">
 <meta property="og:site_name" content="propersimon">
-<meta property="og:description" content="Bitwarden 是一个开源的密码管理器，用于安全地生成、存储和自动填写密码。它可以帮助用户管理各种网站和应用的登录信息、信用卡资料、身份证明文件等敏感数据。通过该软件可以帮助你记录登录信息，以及生成安全的密码。 Bitwarden 支持的平台 浏览器扩展：Chrome、Firefox、Edge、Safari、Brave 等 桌面应用：Windows、macOS、Linux 移动端：iOS、An">
+<meta property="og:description" content="Bitwarden 是一个开源的密码管理器，用于安全地生成、存储和自动填写密码。它可以帮助用户管理各种网站和应用的登录信息、信用卡资料、身份证明文件等敏感数据。通过该软件可以帮助你记录登录信息，以及生成安全的密码。">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://raw.githubusercontent.com/zzx-doc/markdown_picture_bed/master/bitwarden.jpg">
 <meta property="og:image" content="https://raw.githubusercontent.com/zzx-doc/markdown_picture_bed/master/bitwardenSignIn.jpg">
 <meta property="og:image" content="https://raw.githubusercontent.com/zzx-doc/markdown_picture_bed/master/chromeStoreBitwarden.jpg">
 <meta property="og:image" content="https://raw.githubusercontent.com/zzx-doc/markdown_picture_bed/master/AndroidBitwarden.jpg">
 <meta property="article:published_time" content="2024-08-07T07:06:35.000Z">
-<meta property="article:modified_time" content="2025-07-11T02:29:29.280Z">
+<meta property="article:modified_time" content="2025-07-11T02:37:33.526Z">
 <meta property="article:author" content="propersilmon">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://raw.githubusercontent.com/zzx-doc/markdown_picture_bed/master/bitwarden.jpg">
@@ -201,7 +201,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2025-07-11 10:29:29" itemprop="dateModified" datetime="2025-07-11T10:29:29+08:00">2025-07-11</time>
+                <time title="Modified: 2025-07-11 10:37:33" itemprop="dateModified" datetime="2025-07-11T10:37:33+08:00">2025-07-11</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -226,7 +226,7 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">Symbols count in article: </span>
-              <span>949</span>
+              <span>950</span>
             </span>
             <span class="post-meta-item" title="Reading time">
               <span class="post-meta-item-icon">
@@ -246,6 +246,8 @@
 
       
         <p><strong>Bitwarden</strong> 是一个开源的密码管理器，用于安全地生成、存储和自动填写密码。它可以帮助用户管理各种网站和应用的登录信息、信用卡资料、身份证明文件等敏感数据。通过该软件可以帮助你记录登录信息，以及生成安全的密码。</p>
+<span id="more"></span>
+
 <h2 id="Bitwarden-支持的平台"><a href="#Bitwarden-支持的平台" class="headerlink" title="Bitwarden 支持的平台"></a>Bitwarden 支持的平台</h2><ul>
 <li>浏览器扩展：Chrome、Firefox、Edge、Safari、Brave 等</li>
 <li>桌面应用：Windows、macOS、Linux</li>
@@ -280,7 +282,7 @@
 </ul>
 </li>
 </ol>
-<span id="more"></span>
+<!--more-->
 
 <h2 id="部署"><a href="#部署" class="headerlink" title="部署"></a>部署</h2><h3 id="部署要求"><a href="#部署要求" class="headerlink" title="部署要求"></a>部署要求</h3><table>
 <thead>
