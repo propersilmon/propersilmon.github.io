@@ -20,17 +20,20 @@
     var CONFIG = {"hostname":"example.com","root":"/","scheme":"Mist","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="something true, something wrong">
-<meta property="og:type" content="website">
-<meta property="og:title" content="propersimon">
-<meta property="og:url" content="http://example.com/archives/2025/index.html">
+  <meta name="description" content="安装Nginx下面以debian&#x2F;ubuntu系统为例演示nginx的安装。 Ubuntu 通常提供：    包名 说明    nginx-core 只含基础功能   nginx-full 含大量模块   nginx-extras 含 3rd-party 模块，如 headers-more、echo   而 Nginx 官方仓库安装的 nginx，更接近官方源代码构建，不含 Ubuntu 添加的额">
+<meta property="og:type" content="article">
+<meta property="og:title" content="nginx概览指南">
+<meta property="og:url" content="http://example.com/2025/07/07/nginx%E6%A6%82%E8%A7%88%E6%8C%87%E5%8D%97/index.html">
 <meta property="og:site_name" content="propersimon">
-<meta property="og:description" content="something true, something wrong">
+<meta property="og:description" content="安装Nginx下面以debian&#x2F;ubuntu系统为例演示nginx的安装。 Ubuntu 通常提供：    包名 说明    nginx-core 只含基础功能   nginx-full 含大量模块   nginx-extras 含 3rd-party 模块，如 headers-more、echo   而 Nginx 官方仓库安装的 nginx，更接近官方源代码构建，不含 Ubuntu 添加的额">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2025-07-07T07:06:35.000Z">
+<meta property="article:modified_time" content="2025-07-10T08:51:22.694Z">
 <meta property="article:author" content="propersilmon">
+<meta property="article:tag" content="nginx">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="http://example.com/archives/2025/">
+<link rel="canonical" href="http://example.com/2025/07/07/nginx%E6%A6%82%E8%A7%88%E6%8C%87%E5%8D%97/">
 
 
 <script id="page-configurations">
@@ -38,12 +41,12 @@
   CONFIG.page = {
     sidebar: "",
     isHome : false,
-    isPost : false,
+    isPost : true,
     lang   : 'en'
   };
 </script>
 
-  <title>Archive | propersimon</title>
+  <title>nginx概览指南 | propersimon</title>
   
 
 
@@ -157,110 +160,187 @@
         <div class="content-wrap">
           
 
-          <div class="content archive">
+          <div class="content post posts-expand">
             
 
+    
   
   
-  
-  <div class="post-block">
-    <div class="posts-collapse">
-      <div class="collection-title">
-        <span class="collection-header">Um..! 6 posts in total. Keep on posting.</span>
-      </div>
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2025/07/07/nginx%E6%A6%82%E8%A7%88%E6%8C%87%E5%8D%97/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/uploads/avatar.jpg">
+      <meta itemprop="name" content="propersilmon">
+      <meta itemprop="description" content="something true, something wrong">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="propersimon">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          nginx概览指南
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2025-07-07 15:06:35" itemprop="dateCreated datePublished" datetime="2025-07-07T15:06:35+08:00">2025-07-07</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2025-07-10 16:51:22" itemprop="dateModified" datetime="2025-07-10T16:51:22+08:00">2025-07-10</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%B7%A5%E5%85%B7/" itemprop="url" rel="index"><span itemprop="name">工具</span></a>
+                </span>
+            </span>
+
+          
+            <span class="post-meta-item" title="Views" id="busuanzi_container_page_pv" style="display: none;">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">Views: </span>
+              <span id="busuanzi_value_page_pv"></span>
+            </span><br>
+            <span class="post-meta-item" title="Symbols count in article">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">Symbols count in article: </span>
+              <span>319</span>
+            </span>
+            <span class="post-meta-item" title="Reading time">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">Reading time &asymp;</span>
+              <span>1 mins.</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
-    <div class="collection-year">
-      <span class="collection-header">2025</span>
-    </div>
+        <h1 id="安装Nginx"><a href="#安装Nginx" class="headerlink" title="安装Nginx"></a>安装Nginx</h1><p>下面以<code>debian/ubuntu</code>系统为例演示<code>nginx</code>的安装。</p>
+<p>Ubuntu 通常提供：</p>
+<table>
+<thead>
+<tr>
+<th>包名</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>nginx-core</code></td>
+<td>只含基础功能</td>
+</tr>
+<tr>
+<td><code>nginx-full</code></td>
+<td>含大量模块</td>
+</tr>
+<tr>
+<td><code>nginx-extras</code></td>
+<td>含 3rd-party 模块，如 <code>headers-more</code>、<code>echo</code></td>
+</tr>
+</tbody></table>
+<p>而 Nginx 官方仓库安装的 <code>nginx</code>，更接近官方源代码构建，不含 Ubuntu 添加的额外模块。</p>
+<p>👉 <strong>如果你依赖某些 Ubuntu 专有构建模块（如 lua、echo、headers-more）</strong>，可能需要：</p>
+<ul>
+<li>自行编译</li>
+<li>或使用第三方（如 <a target="_blank" rel="noopener" href="https://openresty.org/">OpenResty</a>）</li>
+</ul>
+<p>为了获取最新的版本特性，下面使用<code>nginx</code>官方的APT源来安装最新版本的<code>nginx</code>。</p>
+<p>1️⃣<strong>安装依赖工具（用于添加仓库）</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt install curl gnupg2 ca-certificates lsb-release -y</span><br></pre></td></tr></table></figure>
 
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+<p>2️⃣ <strong>添加 Nginx 官方签名密钥</strong></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">curl https://nginx.org/keys/nginx_signing.key | gpg --dearmor | <span class="built_in">sudo</span> <span class="built_in">tee</span> /etc/apt/trusted.gpg.d/nginx.gpg &gt;/dev/null</span><br></pre></td></tr></table></figure>
 
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2025-07-07T15:06:35+08:00"
-              content="2025-07-07">
-          07-07
-        </time>
-      </div>
+<p>3️⃣<strong>添加官方 Nginx APT源</strong> </p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">echo</span> <span class="string">&quot;deb [arch=amd64 signed-by=/etc/apt/trusted.gpg.d/nginx.gpg] http://nginx.org/packages/ubuntu <span class="subst">$(lsb_release -cs)</span> nginx&quot;</span> | <span class="built_in">sudo</span> <span class="built_in">tee</span> /etc/apt/sources.list.d/nginx.list</span><br></pre></td></tr></table></figure>
 
-      <div class="post-title">
-          <a class="post-title-link" href="/2025/07/07/Hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%8C%87%E5%8D%97/" itemprop="url">
-            <span itemprop="name">Hexo博客搭建指南</span>
-          </a>
-      </div>
+<p>4️⃣ <strong>更新索引并安装最新版 Nginx</strong></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">sudo</span> apt update</span><br><span class="line"><span class="built_in">sudo</span> apt install nginx -y</span><br></pre></td></tr></table></figure>
 
-    </header>
-  </article>
+<p><strong>验证安装版本</strong></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nginx -v</span><br></pre></td></tr></table></figure>
 
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+<p>输出类似：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nginx version: nginx/1.26.1</span><br></pre></td></tr></table></figure>
 
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2025-07-07T15:06:35+08:00"
-              content="2025-07-07">
-          07-07
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2025/07/07/Let's%20Encrypt%20%E5%85%8D%E8%B4%B9%E8%AF%81%E4%B9%A6%E8%8E%B7%E5%8F%96/" itemprop="url">
-            <span itemprop="name">Let's Encrypt 免费证书获取</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2025-07-07T15:06:35+08:00"
-              content="2025-07-07">
-          07-07
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2025/07/07/nginx%E6%A6%82%E8%A7%88%E6%8C%87%E5%8D%97/" itemprop="url">
-            <span itemprop="name">nginx概览指南</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2025-07-07T05:38:57+08:00"
-              content="2025-07-07">
-          07-07
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2025/07/07/hello-world/" itemprop="url">
-            <span itemprop="name">Hello World</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-
+<h1 id="配置Nginx"><a href="#配置Nginx" class="headerlink" title="配置Nginx"></a>配置Nginx</h1><p><strong>配置文件路径</strong></p>
+<p>使用官方源安装的 Nginx：</p>
+<table>
+<thead>
+<tr>
+<th>配置项</th>
+<th>路径</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>主配置文件</td>
+<td><code>/etc/nginx/nginx.conf</code></td>
+</tr>
+<tr>
+<td>默认网站根目录</td>
+<td><code>/usr/share/nginx/html</code></td>
+</tr>
+<tr>
+<td>systemd 启动服务</td>
+<td><code>sudo systemctl restart nginx</code></td>
+</tr>
+</tbody></table>
 
     </div>
-  </div>
-  
-  
-  
 
+    
+    
+    
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/nginx/" rel="tag"># nginx</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2025/07/07/hello-world/" rel="prev" title="Hello World">
+      <i class="fa fa-chevron-left"></i> Hello World
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2025/07/07/Let's%20Encrypt%20%E5%85%8D%E8%B4%B9%E8%AF%81%E4%B9%A6%E8%8E%B7%E5%8F%96/" rel="next" title="Let's Encrypt 免费证书获取">
+      Let's Encrypt 免费证书获取 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
   
 
 
@@ -313,6 +393,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%AE%89%E8%A3%85Nginx"><span class="nav-number">1.</span> <span class="nav-text">安装Nginx</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E9%85%8D%E7%BD%AENginx"><span class="nav-number">2.</span> <span class="nav-text">配置Nginx</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
