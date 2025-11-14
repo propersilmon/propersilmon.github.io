@@ -1,8 +1,8 @@
-http://example.com/2025/11/11/ComfyUI%E5%9C%A8Windows%2010%E4%B8%8B%E7%9A%84%E5%AE%89%E8%A3%85/
+http://example.com/2025/07/07/Hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%8C%87%E5%8D%97/
+http://example.com/2025/11/07/ComfyUI%E5%9C%A8Windows%2010%E4%B8%8B%E7%9A%84%E5%AE%89%E8%A3%85/
 http://example.com/2024/08/07/%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E8%87%AA%E5%8A%A8%E5%8C%96/
 http://example.com/2025/07/23/%E6%B6%88%E6%81%AF%E9%98%9F%E5%88%97/
 http://example.com/2025/07/07/nginx%E6%A6%82%E8%A7%88%E6%8C%87%E5%8D%97/
-http://example.com/2025/07/07/Hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%8C%87%E5%8D%97/
 http://example.com/2024/08/07/Bitwarden%E9%83%A8%E7%BD%B2%E6%8C%87%E5%8D%97/
 http://example.com/2025/07/07/Let's%20Encrypt%20%E5%85%8D%E8%B4%B9%E8%AF%81%E4%B9%A6%E8%8E%B7%E5%8F%96/
 http://example.com/2024/08/07/ssh%E7%AE%80%E6%98%93%E6%8C%87%E5%8D%97/
@@ -17,3 +17,4 @@ http://example.com/tags/nginx/
 http://example.com/tags/ssh/
 http://example.com/categories/%E5%B7%A5%E5%85%B7/
 http://example.com/categories/%E7%BD%91%E7%BB%9C/
+http://example.com/categories/AI%E7%94%9F%E6%88%90/

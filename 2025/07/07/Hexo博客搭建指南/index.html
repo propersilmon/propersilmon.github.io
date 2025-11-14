@@ -32,7 +32,7 @@
 <meta property="og:image" content="https://raw.githubusercontent.com/zzx-doc/markdown_picture_bed/master/gitPage.jpg?token=AQ5YX4UME37S6CYSW62UZOLINSGGK">
 <meta property="og:image" content="https://raw.githubusercontent.com/zzx-doc/markdown_picture_bed/master/hexoHelloWorld.jpg?token=AQ5YX4TSEOQUPTCYFHKL3DLINSGHC">
 <meta property="article:published_time" content="2025-07-07T07:06:35.000Z">
-<meta property="article:modified_time" content="2025-07-11T05:17:12.507Z">
+<meta property="article:modified_time" content="2025-11-14T01:17:54.986Z">
 <meta property="article:author" content="propersilmon">
 <meta property="article:tag" content="Hexo">
 <meta name="twitter:card" content="summary">
@@ -202,7 +202,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2025-07-11 13:17:12" itemprop="dateModified" datetime="2025-07-11T13:17:12+08:00">2025-07-11</time>
+                <time title="Modified: 2025-11-14 09:17:54" itemprop="dateModified" datetime="2025-11-14T09:17:54+08:00">2025-11-14</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -227,14 +227,14 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">Symbols count in article: </span>
-              <span>1.7k</span>
+              <span>2k</span>
             </span>
             <span class="post-meta-item" title="Reading time">
               <span class="post-meta-item-icon">
                 <i class="far fa-clock"></i>
               </span>
                 <span class="post-meta-item-text">Reading time &asymp;</span>
-              <span>6 mins.</span>
+              <span>7 mins.</span>
             </span>
 
         </div>
@@ -271,6 +271,9 @@
 <h3 id="安装Hexo"><a href="#安装Hexo" class="headerlink" title="安装Hexo"></a>安装<code>Hexo</code></h3><p>在<code>power shell</code>或者<code>bash</code>中通过如下命令安装<code>hexo-cli</code></p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-cli -g</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># 如下命令测试是否安装成功</span></span><br><span class="line">hexo -v</span><br><span class="line"></span><br><span class="line"><span class="comment"># 出现hexo版本号表示安装成功</span></span><br></pre></td></tr></table></figure>
 
+<blockquote>
+<p>如果你在系统中同时使用了Anaconda，并同时使用了<code>conda activate</code>激活了某个环境，那么可能出现npm包命令无法直接使用的问题（这时也可以通过在命令前附加npx来解决），这时可以先用<code>conda deactivate</code>命令回退到初始环境来解决问题。</p>
+</blockquote>
 <h2 id="初始化博客项目"><a href="#初始化博客项目" class="headerlink" title="初始化博客项目"></a>初始化博客项目</h2><p>在<code>power shell</code>或者<code>bash</code>中通过如下命令创建一个博客项目</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># hexo init [blogName] # blog表示博客名称</span></span><br><span class="line">$ hexo init blog</span><br><span class="line">$ <span class="built_in">cd</span> blog</span><br><span class="line"></span><br><span class="line"><span class="comment"># 安装依赖项</span></span><br><span class="line">$ npm install</span><br><span class="line"></span><br><span class="line"><span class="comment"># 运行hexo服务器</span></span><br><span class="line">$ hexo server</span><br><span class="line"></span><br><span class="line"><span class="comment"># 运行结果如下</span></span><br><span class="line">INFO  Validating config</span><br><span class="line">INFO  Start processing</span><br><span class="line">INFO  Hexo is running at http://localhost:4000/ . Press Ctrl+C to stop.</span><br></pre></td></tr></table></figure>
 
@@ -342,6 +345,39 @@
 </tr>
 </tbody></table>
 <h3 id="迁移已有的markdown文档到hexo中"><a href="#迁移已有的markdown文档到hexo中" class="headerlink" title="迁移已有的markdown文档到hexo中"></a>迁移已有的markdown文档到hexo中</h3><p>迁移已有的文档到<code>source/_posts</code>路径下，然后依据模板要求添加起始字段即可</p>
+<p>如下所示：</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">title: Hexo博客搭建指南 # 页面名称</span><br><span class="line">author: propersilmon</span><br><span class="line">date: 2025-07-07 15:06:35 # 生成时间</span><br><span class="line">tags: Hexo # 标签</span><br><span class="line">categories: 工具</span><br><span class="line">comments: true</span><br></pre></td></tr></table></figure>
+
+<h3 id="博客发布"><a href="#博客发布" class="headerlink" title="博客发布"></a>博客发布</h3><h4 id="1-清理（可选）"><a href="#1-清理（可选）" class="headerlink" title="1. 清理（可选）"></a><strong>1. 清理（可选）</strong></h4><p>清除缓存和旧文件：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h4 id="2-生成静态文件（构建）"><a href="#2-生成静态文件（构建）" class="headerlink" title="2. 生成静态文件（构建）"></a><strong>2. 生成静态文件（构建）</strong></h4><p>这是 Hexo 的构建命令：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>或简写：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo g</span><br></pre></td></tr></table></figure>
+
+<p>执行后会生成 <code>public/</code> 文件夹，里面就是可发布的静态网站。</p>
+<hr>
+<h4 id="3-发布网站（deploy）"><a href="#3-发布网站（deploy）" class="headerlink" title="3. 发布网站（deploy）"></a><strong>3. 发布网站（deploy）</strong></h4><p>如果你已经在 <code>_config.yml</code> 中配置了 <code>deploy:</code>（例如 GitHub Pages）<br> 你可以用：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>或简写：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo d</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h4 id="4-一次性构建-发布"><a href="#4-一次性构建-发布" class="headerlink" title="4. 一次性构建 + 发布"></a><strong>4. 一次性构建 + 发布</strong></h4><p>Hexo 提供组合命令：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo g -d</span><br></pre></td></tr></table></figure>
+
+<p>表示 <strong>生成并部署</strong>。</p>
+<hr>
+<h4 id="本地预览-build-serve"><a href="#本地预览-build-serve" class="headerlink" title="本地预览 (build + serve)"></a>本地预览 (build + serve)</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo server</span><br></pre></td></tr></table></figure>
+
+<p>或</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo s</span><br></pre></td></tr></table></figure>
+
+<h4 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h4><p>上述命令都应在<code>hexo init</code>即hexo初始化后的文件夹中使用</p>
 <h3 id="博客搜素引擎发现"><a href="#博客搜素引擎发现" class="headerlink" title="博客搜素引擎发现"></a>博客搜素引擎发现</h3><p>为增加搜索引擎发现博客站点的概率，可以为站点添加网站地图<code>sitemap.xml</code>。</p>
 <p>在<code>Hexo</code>项目下运行：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-generator-sitemap --save</span><br></pre></td></tr></table></figure>
@@ -458,7 +494,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%9C%AC%E5%9C%B0%E9%83%A8%E7%BD%B2"><span class="nav-number">1.</span> <span class="nav-text">本地部署</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AE%89%E8%A3%85Node-js"><span class="nav-number">1.1.</span> <span class="nav-text">安装Node.js</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#winget%E5%AE%89%E8%A3%85Node-js"><span class="nav-number">1.1.1.</span> <span class="nav-text">winget安装Node.js</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%BD%91%E9%A1%B5%E5%AE%89%E8%A3%85Node-js"><span class="nav-number">1.1.2.</span> <span class="nav-text">网页安装Node.js</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AE%89%E8%A3%85Git"><span class="nav-number">1.2.</span> <span class="nav-text">安装Git</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AE%89%E8%A3%85Hexo"><span class="nav-number">1.3.</span> <span class="nav-text">安装Hexo</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%88%9D%E5%A7%8B%E5%8C%96%E5%8D%9A%E5%AE%A2%E9%A1%B9%E7%9B%AE"><span class="nav-number">2.</span> <span class="nav-text">初始化博客项目</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8D%9A%E5%AE%A2%E5%88%9B%E5%BB%BA%E4%B8%8E%E5%8F%91%E5%B8%83"><span class="nav-number">3.</span> <span class="nav-text">博客创建与发布</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%80%9A%E8%BF%87Hexo-cli%E7%94%9F%E6%88%90%E6%96%B0%E9%A1%B5%E9%9D%A2"><span class="nav-number">3.1.</span> <span class="nav-text">通过Hexo-cli生成新页面</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%BF%81%E7%A7%BB%E5%B7%B2%E6%9C%89%E7%9A%84markdown%E6%96%87%E6%A1%A3%E5%88%B0hexo%E4%B8%AD"><span class="nav-number">3.2.</span> <span class="nav-text">迁移已有的markdown文档到hexo中</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%8D%9A%E5%AE%A2%E6%90%9C%E7%B4%A0%E5%BC%95%E6%93%8E%E5%8F%91%E7%8E%B0"><span class="nav-number">3.3.</span> <span class="nav-text">博客搜素引擎发现</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8D%9A%E5%AE%A2%E7%BE%8E%E5%8C%96"><span class="nav-number">4.</span> <span class="nav-text">博客美化</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%9B%B4%E6%8D%A2%E4%B8%BB%E9%A2%98"><span class="nav-number">4.1.</span> <span class="nav-text">更换主题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE"><span class="nav-number">4.2.</span> <span class="nav-text">主题配置</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%9B%B4%E6%8D%A2%E8%83%8C%E6%99%AF%E5%9B%BE%E7%89%87"><span class="nav-number">4.2.1.</span> <span class="nav-text">更换背景图片</span></a></li></ol></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%9C%AC%E5%9C%B0%E9%83%A8%E7%BD%B2"><span class="nav-number">1.</span> <span class="nav-text">本地部署</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AE%89%E8%A3%85Node-js"><span class="nav-number">1.1.</span> <span class="nav-text">安装Node.js</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#winget%E5%AE%89%E8%A3%85Node-js"><span class="nav-number">1.1.1.</span> <span class="nav-text">winget安装Node.js</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%BD%91%E9%A1%B5%E5%AE%89%E8%A3%85Node-js"><span class="nav-number">1.1.2.</span> <span class="nav-text">网页安装Node.js</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AE%89%E8%A3%85Git"><span class="nav-number">1.2.</span> <span class="nav-text">安装Git</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AE%89%E8%A3%85Hexo"><span class="nav-number">1.3.</span> <span class="nav-text">安装Hexo</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%88%9D%E5%A7%8B%E5%8C%96%E5%8D%9A%E5%AE%A2%E9%A1%B9%E7%9B%AE"><span class="nav-number">2.</span> <span class="nav-text">初始化博客项目</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8D%9A%E5%AE%A2%E5%88%9B%E5%BB%BA%E4%B8%8E%E5%8F%91%E5%B8%83"><span class="nav-number">3.</span> <span class="nav-text">博客创建与发布</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%80%9A%E8%BF%87Hexo-cli%E7%94%9F%E6%88%90%E6%96%B0%E9%A1%B5%E9%9D%A2"><span class="nav-number">3.1.</span> <span class="nav-text">通过Hexo-cli生成新页面</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%BF%81%E7%A7%BB%E5%B7%B2%E6%9C%89%E7%9A%84markdown%E6%96%87%E6%A1%A3%E5%88%B0hexo%E4%B8%AD"><span class="nav-number">3.2.</span> <span class="nav-text">迁移已有的markdown文档到hexo中</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%8D%9A%E5%AE%A2%E5%8F%91%E5%B8%83"><span class="nav-number">3.3.</span> <span class="nav-text">博客发布</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-%E6%B8%85%E7%90%86%EF%BC%88%E5%8F%AF%E9%80%89%EF%BC%89"><span class="nav-number">3.3.1.</span> <span class="nav-text">1. 清理（可选）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-%E7%94%9F%E6%88%90%E9%9D%99%E6%80%81%E6%96%87%E4%BB%B6%EF%BC%88%E6%9E%84%E5%BB%BA%EF%BC%89"><span class="nav-number">3.3.2.</span> <span class="nav-text">2. 生成静态文件（构建）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-%E5%8F%91%E5%B8%83%E7%BD%91%E7%AB%99%EF%BC%88deploy%EF%BC%89"><span class="nav-number">3.3.3.</span> <span class="nav-text">3. 发布网站（deploy）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-%E4%B8%80%E6%AC%A1%E6%80%A7%E6%9E%84%E5%BB%BA-%E5%8F%91%E5%B8%83"><span class="nav-number">3.3.4.</span> <span class="nav-text">4. 一次性构建 + 发布</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%9C%AC%E5%9C%B0%E9%A2%84%E8%A7%88-build-serve"><span class="nav-number">3.3.5.</span> <span class="nav-text">本地预览 (build + serve)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9"><span class="nav-number">3.3.6.</span> <span class="nav-text">注意事项</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%8D%9A%E5%AE%A2%E6%90%9C%E7%B4%A0%E5%BC%95%E6%93%8E%E5%8F%91%E7%8E%B0"><span class="nav-number">3.4.</span> <span class="nav-text">博客搜素引擎发现</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8D%9A%E5%AE%A2%E7%BE%8E%E5%8C%96"><span class="nav-number">4.</span> <span class="nav-text">博客美化</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%9B%B4%E6%8D%A2%E4%B8%BB%E9%A2%98"><span class="nav-number">4.1.</span> <span class="nav-text">更换主题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE"><span class="nav-number">4.2.</span> <span class="nav-text">主题配置</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%9B%B4%E6%8D%A2%E8%83%8C%E6%99%AF%E5%9B%BE%E7%89%87"><span class="nav-number">4.2.1.</span> <span class="nav-text">更换背景图片</span></a></li></ol></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -481,7 +517,7 @@
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
           
-        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-count">3</span>
         <span class="site-state-item-name">categories</span></a>
       </div>
       <div class="site-state-item site-state-tags">
@@ -531,12 +567,12 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-chart-area"></i>
     </span>
-    <span title="Symbols count total">10k</span>
+    <span title="Symbols count total">11k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="Reading time total">37 mins.</span>
+    <span title="Reading time total">39 mins.</span>
 </div>
   <div class="powered-by">Powered by <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://mist.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Mist</a>
   </div>
